@@ -1,4 +1,4 @@
-# java-mongo-sample
+# java-mongo-sample (JMS/jms)
 
 I want to try to create a project using Java + mongoDB in order to refresh java in my mind after 3 years of break and learn how to work with mongoDB in Java.
 
@@ -20,7 +20,7 @@ Payment
 "Contract": {
   "id": "string",
   "contractNumber": "string",
-  "startDate": "string", // ISO 8601
+  "startDate": "string",  // ISO 8601
   "endDate": "string",
   "amount": "number",
   "clientId": "string"
