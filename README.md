@@ -20,16 +20,16 @@ Payment
 "Contract": {
   "id": "string",
   "contractNumber": "string",
-  "startDate": "string",  // ISO 8601
-  "endDate": "string",
-  "amount": "number",
+  "startDate": "string",  // LocalDate
+  "endDate": "string",    // LocalDate
+  "amount": "double",
   "clientId": "string"
 }
 
 "Payment": {
   "id": "string",
   "paymentDate": "string",  // ISO 8601
-  "amount": "number",
-  "paymentMethod": ["credit_card", "bank_transfer", "cash", "paypal"],
+  "amount": "double",
+  "paymentMethod": ["CREDIT_CARD", "BANK_TRANSFER", "CASH", "PAYPAL"],
   "contractId": "string"
 }
