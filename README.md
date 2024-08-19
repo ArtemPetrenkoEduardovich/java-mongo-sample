@@ -24,6 +24,7 @@ Payment
   "endDate": "string",    // LocalDate
   "amount": "double",
   "clientId": "string"
+  "status": ["ACTIVE", "CANCELED", "COMPLETED", "DRAFT", "PENDING_PAYMENT"]
 }
 
 "Payment": {
@@ -33,3 +34,17 @@ Payment
   "paymentMethod": ["CREDIT_CARD", "BANK_TRANSFER", "CASH", "PAYPAL"],
   "contractId": "string"
 }
+
+Implement different operations with the contract
+- create a DRAFT
+- publish and wait for payment (PENDING_PAYMENT)
+- cancel contract
+- complete if the endDate is over
+- ACTIVE if the contract has been fully paid (Let's think that the contract can be activated when the full price is paid and at that moment startDate is set)
+
+Implement payment generator on POST: api/payment/generate/:size generate a list of payment + their contract + their clients
+
+Implement payment process:
+When there's an unpaid contract and the payment is come.
+
+Cover by tests
