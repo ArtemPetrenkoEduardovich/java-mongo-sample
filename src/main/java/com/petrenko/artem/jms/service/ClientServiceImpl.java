@@ -40,6 +40,7 @@ public class ClientServiceImpl implements ClientService {
     data.setFirstName(dto.getFirstName());
     data.setLastName(dto.getLastName());
     data.setContactInfo(dto.getContactInfo());
+    data.setBirthDate(dto.getBirthDate());
   }
 
   private ClientData getOrThrow(String id) {
@@ -59,6 +60,7 @@ public class ClientServiceImpl implements ClientService {
         .firstName(data.getFirstName())
         .lastName(data.getLastName())
         .contactInfo(data.getContactInfo())
+        .birthDate(data.getBirthDate())
         .build();
   }
 
