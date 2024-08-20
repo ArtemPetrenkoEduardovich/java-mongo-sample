@@ -11,6 +11,7 @@ Payment
   "id": "string",
   "firstName": "string",
   "lastName": "string",
+  "birthDate": "string",  // LocalDate
   "contactInfo": {
     "email": "string",
     "phone": "string"
@@ -39,7 +40,6 @@ Implement different operations with the contract
 - create a DRAFT
 - publish and wait for payment (PENDING_PAYMENT)
 - cancel contract
-- complete if the endDate is over
 - ACTIVE if the contract has been fully paid (Let's think that the contract can be activated when the full price is paid and at that moment startDate is set)
 
 Implement payment generator on POST: api/payment/generate/:size generate a list of payment + their contract + their clients
